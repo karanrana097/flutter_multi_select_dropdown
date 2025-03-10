@@ -35,16 +35,16 @@ class MultiSelectDropdown extends StatefulWidget {
   }
 
   @override
-  _MultiSelectDropdownState createState() => _MultiSelectDropdownState();
+  MultiSelectDropdownState createState() => MultiSelectDropdownState();
 }
 
-class _MultiSelectDropdownState extends State<MultiSelectDropdown> {
-  List<String> selectedItems = [];
+class MultiSelectDropdownState extends State<MultiSelectDropdown> { // ✅ Removed `_` prefix
+  late List<String> selectedItems;
 
   @override
   void initState() {
     super.initState();
-    selectedItems = widget.initiallySelected;
+    selectedItems = List.from(widget.initiallySelected); // Ensuring proper initialization
   }
 
   void _toggleSelection(String id) {
@@ -68,7 +68,7 @@ class _MultiSelectDropdownState extends State<MultiSelectDropdown> {
       onTap: () {
         _showMultiSelectDialog(context);
       },
-      items: [],
+      items: const [],
       onChanged: (_) {},
     );
   }
@@ -119,7 +119,7 @@ class _MultiSelectDropdownState extends State<MultiSelectDropdown> {
                     value: selectedItems.contains(item['id']),
                     onChanged: (_) => _toggleSelection(item['id']!),
                   );
-                }).toList(),
+                }),
               ],
             ),
           ),

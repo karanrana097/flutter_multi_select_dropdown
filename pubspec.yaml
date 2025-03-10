@@ -1,14 +1,20 @@
 name: multi_select_dropdown
-description: A customizable multi-select dropdown widget for Flutter apps.
-version: 0.0.1
-homepage: https://github.com/your-repo/multi_select_dropdown
-repository: https://github.com/your-repo/multi_select_dropdown
-issue_tracker: https://github.com/your-repo/multi_select_dropdown/issues
-author: Karan Rana
+description: A customizable multi-select dropdown for Flutter applications.
+version: 1.0.0
+repository: https://github.com/karanrana097/multi_select_dropdown
+homepage: https://github.com/karanrana097/multi_select_dropdown
+
 environment:
-  sdk: '>=3.0.0 <4.0.0'
-  flutter: '>=3.7.0'
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^3.0.1
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
