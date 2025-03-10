@@ -25,7 +25,7 @@ flutter pub get
 ### 1️⃣ Basic Example  
 ```dart
 import 'package:flutter/material.dart';
-import 'package:multi_select_dropdown/multi_select_dropdown.dart';
+import 'package:multi_select_dropdown/flutter_multi_select_dropdown.dart';
 
 void main() {
   runApp(MyApp());
