@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_multi_select_dropdown/flutter_multi_select_dropdown.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:multi_select_dropdown/flutter_multi_select_dropdown.dart';
 
 void main() {
   testWidgets('MultiSelectDropdown renders correctly',
