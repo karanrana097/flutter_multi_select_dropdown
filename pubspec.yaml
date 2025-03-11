@@ -1,11 +1,12 @@
 name: flutter_multi_select_dropdown
 description: A customizable multi-select dropdown for Flutter applications.
-version: 0.0.2
+version: 1.0.0
 repository: https://github.com/karanrana097/flutter_multi_select_dropdown
 homepage: https://github.com/karanrana097/flutter_multi_select_dropdown
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: ">=2.16.2 <4.0.0"
+  flutter: ">=1.17.0"
 
 dependencies:
   flutter:
@@ -15,6 +16,9 @@ dev_dependencies:
   flutter_lints: ^3.0.1
   flutter_test:
     sdk: flutter
+  lint: ^2.3.0
+  very_good_analysis: ^6.0.0
 
 flutter:
   uses-material-design: true
+
