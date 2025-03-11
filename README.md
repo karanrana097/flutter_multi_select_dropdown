@@ -21,7 +21,7 @@ You can use the controller to programmatically select/unselect items, clear the 
 ```dart
 final MultiSelectController<User> _controller = MultiSelectController<User>();
 
-_controller.clearAll(); /// Clear all selected items
+_controller.clearAll()?/// Clear all selected items
 
 _controller.selectWhere(bool Function(DropdownItem<User>) predicate); /// Select items based on a predicate
 
